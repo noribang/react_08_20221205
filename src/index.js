@@ -4,12 +4,9 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-
-function App() {
+function Header() {
   return (
-    <div>
-      <header>
+    <header>
         <h1>PetLand</h1>
         <nav>
           <button>
@@ -18,6 +15,23 @@ function App() {
           </button>
         </nav>
       </header>
+  )
+}
+
+
+function App() {
+  return (
+    <div>
+      <Header />
+      {/* <header>
+        <h1>PetLand</h1>
+        <nav>
+          <button>
+            <span role="img">👤</span>
+            Login
+          </button>
+        </nav>
+      </header> */}
       <main>
         <div className="card">
           <h2>Welcome to PetLand!</h2>
