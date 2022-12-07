@@ -16,6 +16,13 @@ function Button(props) {
   )
 }
 // Component
+function Subheading(props) {
+  return (
+    <h2>{props.text}</h2>
+  )
+}
+
+// Component
 function Header(props) {
   return (
     <header>
