@@ -18,10 +18,12 @@ function Button(props) {
 // Component
 function Subheading(props) {
   return (
-    <h2>{props.text}</h2>
+    <>
+      <h2>{props.text}</h2>
+    </>
+    
   )
 }
-
 // Component
 function Header(props) {
   return (
@@ -42,11 +44,13 @@ function Main() {
   return (
     <main>
         <div className="card">
-          <h2>Welcome to PetLand!</h2>
+          <Subheading text="Welcome to PetLand!"/>
+          {/* <h2>Welcome to PetLand!</h2> */}
           <em>Find your dream pet</em>
         </div>
         <div className="card">
-          <h2>What pets would you like to see?</h2>
+          <Subheading text="What pets would you like to see?" />
+          {/* <h2>What pets would you like to see?</h2> */}
           <div>
             <Button img="😸" text="Cats"/>
             <Button img="🐕" text="Dogs"/>
