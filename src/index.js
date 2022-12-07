@@ -5,13 +5,13 @@ import './style.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function Header() {
+function Header(props) {
   return (
     <header>
-        <h1>PetLand</h1>
+        <h1>{props.heading}</h1>
         <nav>
           <button>
-            <span role="img">👤</span>
+            <span role="img">{props.img}</span>
             Login
           </button>
         </nav>
@@ -19,21 +19,9 @@ function Header() {
   )
 }
 
-
-function App() {
+function Main() {
   return (
-    <div>
-      <Header />
-      {/* <header>
-        <h1>PetLand</h1>
-        <nav>
-          <button>
-            <span role="img">👤</span>
-            Login
-          </button>
-        </nav>
-      </header> */}
-      <main>
+    <main>
         <div className="card">
           <h2>Welcome to PetLand!</h2>
           <em>Find your dream pet</em>
@@ -52,6 +40,42 @@ function App() {
           </div>
         </div>
       </main>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <Header heading="Pet Shop" img="👤"/>
+      <Main />
+      {/* <header>
+        <h1>PetLand</h1>
+        <nav>
+          <button>
+            <span role="img">👤</span>
+            Login
+          </button>
+        </nav>
+      </header> */}
+      {/* <main>
+        <div className="card">
+          <h2>Welcome to PetLand!</h2>
+          <em>Find your dream pet</em>
+        </div>
+        <div className="card">
+          <h2>What pets would you like to see?</h2>
+          <div>
+            <button>
+              <span role="img">😸</span>
+              Cats
+            </button>
+            <button>
+              <span role="img">🐕</span>
+              Dogs
+            </button>
+          </div>
+        </div>
+      </main> */}
     </div>
   );
 }
