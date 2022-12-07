@@ -5,20 +5,32 @@ import './style.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const imgRole = "img"
+// Component
+function Button(props) {
+  return (
+    <button>
+      <span role={imgRole}>{props.img}</span>
+      {props.text}
+    </button>
+  )
+}
+// Component
 function Header(props) {
   return (
     <header>
         <h1>{props.heading}</h1>
         <nav>
-          <button>
+          {/* <button>
             <span role="img">{props.img}</span>
-            Login
-          </button>
+            {props.text}
+          </button> */}
+          <Button img="👤" text="Login" />
         </nav>
       </header>
   )
 }
-
+// Component
 function Main() {
   return (
     <main>
@@ -46,7 +58,7 @@ function Main() {
 function App() {
   return (
     <div>
-      <Header heading="Pet Shop" img="👤"/>
+      <Header heading="Pet Shop"/>
       <Main />
       {/* <header>
         <h1>PetLand</h1>
