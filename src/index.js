@@ -36,13 +36,27 @@ function Header(props) {
   )
 }
 // Component
+function Card(props) {
+  return (
+    <div className="card">
+      <Subheading text={props.text}/>
+      {props.children}
+    </div>
+  )
+}
+
+
+// Component
 function Main() {
   return (
     <main>
-        <div className="card">
+        {/* <div className="card">
           <Subheading text="Welcome to PetLand!"/>
           <em>Find your dream pet</em>
-        </div>
+        </div> */}
+        <Card text="Welcome to PetLand!">
+          <em>Find your dream pet</em>
+        </Card>
         <div className="card">
           <Subheading text="What pets would you like to see?" />
           <div>
