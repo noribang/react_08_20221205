@@ -30,10 +30,6 @@ function Header(props) {
     <header>
         <h1>{props.heading}</h1>
         <nav>
-          {/* <button>
-            <span role="img">{props.img}</span>
-            {props.text}
-          </button> */}
           <Button img="👤" text="Login" />
         </nav>
       </header>
@@ -45,23 +41,13 @@ function Main() {
     <main>
         <div className="card">
           <Subheading text="Welcome to PetLand!"/>
-          {/* <h2>Welcome to PetLand!</h2> */}
           <em>Find your dream pet</em>
         </div>
         <div className="card">
           <Subheading text="What pets would you like to see?" />
-          {/* <h2>What pets would you like to see?</h2> */}
           <div>
             <Button img="😸" text="Cats"/>
             <Button img="🐕" text="Dogs"/>
-            {/* <button>
-              <span role="img">😸</span>
-              Cats
-            </button> */}
-            {/* <button>
-              <span role="img">🐕</span>
-              Dogs
-            </button> */}
           </div>
         </div>
       </main>
