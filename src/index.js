@@ -21,7 +21,6 @@ function Subheading(props) {
     <>
       <h2>{props.text}</h2>
     </>
-    
   )
 }
 // Component
@@ -44,26 +43,19 @@ function Card(props) {
     </div>
   )
 }
-
-
 // Component
 function Main() {
   return (
     <main>
-        {/* <div className="card">
-          <Subheading text="Welcome to PetLand!"/>
-          <em>Find your dream pet</em>
-        </div> */}
         <Card text="Welcome to PetLand!">
           <em>Find your dream pet</em>
         </Card>
-        <div className="card">
-          <Subheading text="What pets would you like to see?" />
+        <Card text="What pets would you like to see?">
           <div>
             <Button img="😸" text="Cats"/>
             <Button img="🐕" text="Dogs"/>
           </div>
-        </div>
+        </Card>
       </main>
   )
 }
@@ -73,34 +65,6 @@ function App() {
     <div>
       <Header heading="Pet Land"/>
       <Main />
-      {/* <header>
-        <h1>PetLand</h1>
-        <nav>
-          <button>
-            <span role="img">👤</span>
-            Login
-          </button>
-        </nav>
-      </header> */}
-      {/* <main>
-        <div className="card">
-          <h2>Welcome to PetLand!</h2>
-          <em>Find your dream pet</em>
-        </div>
-        <div className="card">
-          <h2>What pets would you like to see?</h2>
-          <div>
-            <button>
-              <span role="img">😸</span>
-              Cats
-            </button>
-            <button>
-              <span role="img">🐕</span>
-              Dogs
-            </button>
-          </div>
-        </div>
-      </main> */}
     </div>
   );
 }
